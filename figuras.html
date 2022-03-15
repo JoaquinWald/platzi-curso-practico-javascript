@@ -7,9 +7,62 @@
   <title>Figuras geométricas | Curso Práctico de JavaScript en Platzi</title>
 </head>
 <body>
-  <h1>
-    Figuras geométricas
-  </h1>
+  <header>
+    <h1>
+      Figuras geométricas
+    </h1>
+    <p> <strong> Este es el primer taller del curso práctico de JavaScript </strong> </p>
+  </header>
+
+<!-- Cuadrado------------------------------------ -->
+  <section>
+    <h2>Calcula el área y perímetro de un cuadrado</h2>
+    <form>
+      <label for="InputCuadrado">
+        Escribe cuánto mide cada lado de tu cuadrado:
+      </label>
+      <br>
+      <input id="InputCuadrado" type="number"/>
+      <button type="button" onclick="calcularPerimetroCuadrado()">
+        Calcular el perímetro
+      </button>
+      <button type="button" onclick="calcularAreaCuadrado()">
+        Calcular el área
+      </button>
+    </form>
+  </section>
+
+<!-- Triangulo---------------------------------- -->
+  <section>
+    <h2>Calcula el perímetro de un triángulo</h2>
+    <form>
+
+      <label for="InputTriangulo1">
+        Escribe cuánto mide el lado A:
+      </label>
+      <input id="InputTriangulo1" type="number" placeholder="Lado A"/>
+      <br>
+
+      <label for="InputTriangulo2">
+        Escribe cuánto mide el lado B:
+      </label>
+      <input id="InputTriangulo2" type="number" placeholder="Lado B"/>
+      <br>
+
+      <label for="InputBaseTriangulo">
+        Escribe cuánto mide la Base:
+      </label>
+      <input id="InputBaseTriangulo" type="number" placeholder="Base"/>
+      <br>
+
+      <button type="button" onclick="calcularPerimetroTriangulo()">
+        Calcular perímetro
+      </button>
+      <br>
+
+    </form>
+  </section>
+
 
   <script src="./figuras.js"></script>
 </body>
